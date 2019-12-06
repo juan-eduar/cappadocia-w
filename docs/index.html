@@ -80,72 +80,16 @@
 				</div>
 			</div>
 			<div class="boton-navbar">
-				<a href="#contacto" class="btn btn-white">
-					<img src="assets/img/search.png">
-				</a>
+				<form  id="frm_search_form" method="get" class="searchform">                     
+					<div class="search-wrapper">
+						<input class="search-input" autocomplete="off" type="text" placeholder="Buscar" name="s" /><i class="fa fa-search"></i>
+					</div>
+				</form>
 			</div>
 
 		</nav>
 	</header>
-	<!-- <header class="container-nav">
-		<section class="container-navbar container">
-			<div class="container-navbar__content">
 
-				<div class="container-navbar__nav">
-					<nav class="navbar navbar-expand-lg navbar-fixed-js ">
-						<a class="nav-brand" href="#">
-							<img src="assets/img/logo.barra.png">
-
-						</a> 
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item ">
-								<a class="nav-link " href="#alimentos">
-									Inicio
-								</a>
-
-							</li>
-
-							<li class="nav-item ">
-								<a class="nav-link " href="#lacteos" >
-									Tienda
-								</a>
-
-							</li>
-							<li class="nav-item ">
-								<a class="nav-link " href="#carnes">
-									Categorias
-								</a>
-
-							</li>
-
-							<li class="nav-item ">
-								<a class="nav-link " href="#lacteos" >
-									Quienes somos
-								</a>
-
-							</li>
-
-
-						</ul>
-
-					</nav>
-
-				</div>
-				<div class="boton-navbar">
-					<a href="#contacto" class="btn btn-white">
-						<img src="assets/img/search.png">
-					</a>
-				</div>
-			</div>
-
-		</section>
-	</header> -->
 	<section class="container-banner">
 		<div class="container-banner__img">
 			<img class="img-banner" src="assets/img/header.jpg">
@@ -826,7 +770,25 @@
 						Derechos Reservados
 					</p>
 				</div>
+
+
 			</footer>
+			<script>
+				
+  // buscador
+
+  var searchWrapper = document.querySelector('.search-wrapper'),
+  searchInput = document.querySelector('.search-input');
+
+  document.addEventListener('click', function (e) {
+  	if (~e.target.className.indexOf('search')) {
+  		searchWrapper.classList.add('focused');
+  		searchInput.focus();
+  	} else {
+  		searchWrapper.classList.remove('focused');
+  	}
+  });
+</script>
 
 
 
@@ -872,9 +834,9 @@
 
 
 
-			<script src="assets/js/jquery-3.4.1.min.js"></script>
-			<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="assets/js/slick.js"></script>
-			<script type="text/javascript" src="assets/js/main.js"></script>
-		</body>
-		</html>
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

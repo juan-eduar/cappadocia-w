@@ -65,6 +65,7 @@ $('.slider-nav').slick({
   dots: true,
   centerMode: true,
   focusOnSelect: true
+  
 
 });
 $('.main-banner-content__opciones').slick({
@@ -103,3 +104,4 @@ $('.main-banner-content__opciones').slick({
     // instead of a settings object
     ]
   });
+
