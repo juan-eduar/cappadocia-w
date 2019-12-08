@@ -11,12 +11,12 @@ body{
   height: 602px;
 }
 .container-productos__descripcion .slick-prev:before {
-  content: '\f0d9';
+  content: '\f104';
   font-size: 41px;
   margin-right: 6px;
 }
 .container-productos__descripcion .slick-next:before {
-  content: '\f0da';
+  content: '\f105';
   font-size: 41px;
   margin-left: 6px;
 
@@ -312,11 +312,17 @@ option{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.container-slick button:focus {
+  outline: 1px dotted;
 
+}
 .container-slick .slick-prev:before {
   content: '\f104';
   font-size: 41px;
   margin-right: 6px;
+}
+.btn:focus{
+  box-shadow: none;
 }
 
 
@@ -424,6 +430,10 @@ option{
 .card-destacados{
   width: 16rem;
   position: relative;
+}
+.card-destacados:hover{
+  transform: translateY(-20px);
+  transition: 0.3s all;
 }
 .card-img__destacados{
   width: 90%;
@@ -623,6 +633,10 @@ input[type="subject"],{
 }
 .img-redes{
   padding-right: 20px;
+}
+.img-redes1{
+  padding-right: 20px;
+  padding-left: 13px;
 }
 .redes{
   width: 36px;
